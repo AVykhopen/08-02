@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    color: $primery-text-color;
+    font-family: $fontText;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.section {
+    padding: 94px 0;
+}
+
+.title {
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.label {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label p {
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $primery-background-color;
+}
+
+p {
+    display: block;
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+}
+.name {
+    color: $primery-text-color;
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 4px;
+    font-style: normal;
+}
+
+.text {
+    color: $title-text-color;
+    font-size: 16px;
+    line-height: 1.87;
+    font-style: normal;
+}

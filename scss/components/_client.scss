@@ -1,0 +1,31 @@
+.client__logo {
+    display: flex;
+    gap: 30px;
+}
+
+.client__icon {
+    width: 106px;
+    height: 60px;
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}
+
+.client__link {
+    padding: 16px 32px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    fill: $card-socials-color;
+    border: 1px solid $card-socials-color;
+    border-radius: 4px;
+    transition: border-color 250ms $functionCubic;
+
+&:hover,
+&:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
+}
+}

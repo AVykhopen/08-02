@@ -1,0 +1,93 @@
+.portfolio__buttons {
+    color: $primery-text-color;
+    font-size: 16px;
+    line-height: 1.62px;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+    transition: opacity 250ms $functionCubic;
+}
+
+.portfolio__buttons .button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primery-text-color;
+    background-color: $primery-background-color;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 25px;
+    border-radius: 4px;
+    font-style: normal;
+
+    &:hover,
+    &:focus {
+    color: $secondary-text-color;
+    background-color: $accent-color;
+}
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms $functionCubic,
+        visibility 250ms $functionCubic;
+}
+
+.portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    transition: opacity 250ms $functionCubic;
+}
+
+.portfolio__link {
+    color: $primery-text-color;
+    text-decoration: none;
+    transition: box-shadow 250ms;
+
+    &:hover {
+        display: block;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.portfolio__item {
+    flex-basis: 370px;
+    &:hover .portfolio__description {
+        transform: translateY(0);
+    }
+}
+
+.portfolio__box {
+    padding: 20px 24px;
+    border: 1px solid $primery-background-color;
+    border-top: none;
+}
+
+.portfolio__description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    transform: translateY(100%);
+    background-color: $description-color;
+    transition: transform 250ms;
+    color: $secondary-text-color;
+    font-size: 18px;
+    line-height: 1.55;
+}
