@@ -1,0 +1,103 @@
+.mobile-menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    z-index: 999;
+    background-color: $third-color;
+    overflow-y: scroll;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out, -webkit-transform 250ms;
+
+    &.is-open {
+        transform: translateX(0);
+    }
+
+    &__close-button {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        border: 0;
+        background-color: rgba(0, 0, 0, 0);
+        padding: 0;
+        cursor: pointer;
+    }
+
+    &__nav-link {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: $main-color;
+    }
+
+    &__nav {
+        display: block;
+
+        &--current {
+            color: $hover-color;
+        }
+    }
+
+    &__nav-item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &__contacts {
+        &-list {
+            margin-bottom: 64px;
+        }
+
+        &-item:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+        &-link {
+            display: block;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 1.18;
+            letter-spacing: 0.02em;
+            color: $second-color;
+        }
+
+        &-link-number {
+            color: $hover-color;
+        }
+
+        &-link-mail {
+            font-size: 24px;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &-link {
+            position: relative;
+            display: block;
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.22;
+            letter-spacing: 0.02em;
+            color: $hover-color;
+        }
+
+        &--line::after {
+            position: absolute;
+            margin-left: 10px;
+            content: "";
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            height: 22px;
+        }
+    }
+}
