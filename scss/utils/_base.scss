@@ -1,95 +1,62 @@
 body {
-    margin: 0;
-    color: $primery-text-color;
-    font-family: $fontText;
+    font-family: $main-font;
+    color: $main-color;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
+/* reset  */
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
     margin: 0;
 }
 
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
+a {
+    text-decoration: none;
+}
+
+.list {
     padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+    margin: 0;
+    list-style: none;
 }
 
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-.section {
-    padding: 94px 0;
+/* base styles */
+.sections {
+    padding: 60px 0;
+
+    @media (min-width: $desktop) {
+        padding: 94px 0;
+    }
 }
 
-.title {
-    text-align: center;
-    letter-spacing: 0.03em;
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 50px;
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+
+    @media (max-width: 479px) {
+        width: auto;
+    }
+
+    @media (min-width: $mobile) {
+        max-width: $mobile;
+    }
+
+    @media (min-width: $tablet) {
+        max-width: $tablet;
+    }
+
+    @media (min-width: $desktop) {
+        max-width: $desktop;
+    }
 }
 
 img {
     display: block;
     max-width: 100%;
     height: auto;
-}
-
-.label {
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(47, 48, 58, 0.8);
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.label p {
-    letter-spacing: 0.03em;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $primery-background-color;
-}
-
-p {
-    display: block;
-}
-
-.item {
-    position: relative;
-    overflow: hidden;
-}
-.name {
-    color: $primery-text-color;
-    font-size: 18px;
-    line-height: 2;
-    margin-bottom: 4px;
-    font-style: normal;
-}
-
-.text {
-    color: $title-text-color;
-    font-size: 16px;
-    line-height: 1.87;
-    font-style: normal;
+    object-fit: cover;
 }
