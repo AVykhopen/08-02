@@ -370,6 +370,9 @@ img {
   padding: 0;
   cursor: pointer;
 }
+.mobile-menu__close-button:hover, .mobile-menu__close-button:focus {
+  fill: #2196f3;
+}
 .mobile-menu__nav-link {
   font-weight: 500;
   font-size: 40px;
@@ -396,10 +399,15 @@ img {
 .mobile-menu__contacts-link {
   display: block;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 25px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #757575;
+}
+@media screen and (max-width: 357px) {
+  .mobile-menu__contacts-link {
+    font-size: 26px;
+  }
 }
 .mobile-menu__contacts-link-number {
   color: #2196f3;
@@ -414,14 +422,19 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 15px;
+}
+@media screen and (max-width: 357px) {
+  .mobile-menu__socials {
+    font-size: 16px;
+  }
 }
 .mobile-menu__socials-link {
   position: relative;
   display: block;
   font-family: inherit;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 13px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;

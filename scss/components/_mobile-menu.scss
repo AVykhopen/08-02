@@ -26,6 +26,11 @@
         background-color: rgba(0, 0, 0, 0);
         padding: 0;
         cursor: pointer;
+        
+        &:hover,
+            &:focus {
+                fill: $hover-color;
+            }
     }
 
     &__nav-link {
@@ -52,6 +57,7 @@
     &__contacts {
         &-list {
             margin-bottom: 64px;
+            
         }
 
         &-item:not(:last-child) {
@@ -61,10 +67,13 @@
         &-link {
             display: block;
             font-weight: 500;
-            font-size: 34px;
+            font-size: 25px;
             line-height: 1.18;
             letter-spacing: 0.02em;
             color: $second-color;
+            @media screen and (max-width: 357px) {
+                    font-size: 26px;
+                }
         }
 
         &-link-number {
@@ -79,17 +88,21 @@
     &__socials {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 15px;
+        @media screen and (max-width: 357px) {
+                font-size: 16px;
+            }
 
         &-link {
             position: relative;
             display: block;
             font-family: inherit;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 13px;
             line-height: 1.22;
             letter-spacing: 0.02em;
             color: $hover-color;
+            
         }
 
         &--line::after {
