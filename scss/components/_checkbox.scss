@@ -28,13 +28,12 @@
         height: 15px;
         margin-right: 7px;
         border: 2px solid $main-color;
-        // border-radius: 4px;
     }
 
     &:checked+&__icon {
         border-color: $hover-color;
         background-color: $hover-color;
-        background-image: url(../images/icon.svg);
+        background-image: url('../images/icon\ check11.svg');
         background-size: contain;
         background-origin: border-box;
     }

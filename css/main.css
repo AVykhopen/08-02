@@ -625,6 +625,9 @@ img {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+.form__input:focus + .form__icon {
+  fill: #2196f3;
+}
 
 .label {
   display: -webkit-box;
@@ -669,7 +672,7 @@ img {
 .checkbox:checked + .checkbox__icon {
   border-color: #2196f3;
   background-color: #2196f3;
-  background-image: url(../images/icon.svg);
+  background-image: url("../images/icon check11.svg");
   background-size: contain;
   background-origin: border-box;
 }
